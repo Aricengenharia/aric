@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos - ARIC Engenharia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #233554;
+      --secondary: #ffffff;
+      --accent: #4cc9f0;
+      --bg-light: #f5f7fa;
+      --bg-dark: #181c27;
+      --text-dark: #233554;
+      --shadow: 0 6px 32px 0 rgba(40, 60, 90, 0.13);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family:'Roboto',sans-serif; color:var(--primary); background: var(--bg-light);
+    }
+    nav {
+      background:var(--primary); padding:18px 30px;
+      display:flex; align-items:center; justify-content:space-between;
+      box-shadow: var(--shadow);
+    }
+    nav img.logo { height:45px; }
+    nav a {
+      color:#fff; text-decoration:none; font-weight:600; font-family:'Montserrat',sans-serif; font-size:1.08rem;
+      letter-spacing:.02em; transition:color .3s; margin-left: 22px;
+    }
+    nav a:hover { color:var(--accent); }
+    .section-title {
+      font-size: 2rem; text-align: center; margin: 40px 0 30px;
+      font-family: 'Montserrat',sans-serif; color: var(--text-dark);
+    }
+    .card-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 0 auto 40px;
+      max-width: 1080px; padding: 0 20px;
+    }
+    .card {
+      background: #fff; border-radius: 16px; box-shadow: var(--shadow);
+      padding: 35px 22px; text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.03); box-shadow: 0 12px 44px 0 rgba(76,201,240,0.1);
+    }
+    .card img {
+      max-width: 100%; border-radius: 12px; margin-bottom: 15px;
+    }
+    .card-title {
+      font-size: 1.18rem; font-weight: 700; margin-bottom: 11px; color: var(--primary);
+    }
+    .card-content {
+      font-size: 1.04rem; color: #444;
+    }
+    footer {
+      background: var(--bg-dark); color: #fff; padding: 30px 20px; text-align: center;
+      font-size: 1.05rem; margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="ARIC.png" alt="Logo ARIC" class="logo">
+    <div>
+      <a href="index.html">Início</a>
+      <a href="index.html#contato">Contato</a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Nossos Projetos</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x220/?public,construction" alt="Projeto público">
+      <div class="card-title">Setor Público</div>
+      <div class="card-content">Projetos, reformas e construções voltadas à infraestrutura urbana e institucional.</div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x220/?private,building" alt="Projeto privado">
+      <div class="card-title">Setor Privado</div>
+      <div class="card-content">Empreendimentos residenciais, corporativos e industriais com soluções personalizadas.</div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x220/?engineering,plans" alt="Projetos técnicos">
+      <div class="card-title">Projetos Técnicos</div>
+      <div class="card-content">Avaliações, laudos técnicos, consultorias e regularizações especializadas.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>ARIC Engenharia © 2025. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
